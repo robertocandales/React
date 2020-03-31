@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//import UserForm from "./components/UserForm";
+import Header from "./components/Header";
+import { useSpring, animated } from "react-spring";
+import Title from "./components/Title";
+import "../src/Styles/body.css"
+import About from "./components/About";
+import Skill from "./components/Skill";
+import Work from "./components/Work";
+
+
 
 function App() {
+  const animation1 = useSpring({
+    from: {
+      opacity: 0
+    },
+    to: {
+      opacity: 1
+    }
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <animated.div style={animation1}>
+      <div >
+        <header>
+          <Header />  
+        </header>
+        <Title />
+
+        {/* <div style={main} className="container-fluid">
+          <UserForm />
+        </div> */}
+        <About/>
+        <Skill/>
+        <Work/>
+      </div>
+    </animated.div>
   );
 }
 
