@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/robertocandales/React/build",
-  "deploy": "gh-pages -d build",
+  "homepage": "https://robertocandales.github.io/React",
+  
   "name": "todolist",
   "version": "0.1.0",
   "private": true,
