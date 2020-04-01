@@ -44,7 +44,7 @@ function Title() {
           </h1>
           
           <p >HTML / CSS / Javascript / React</p>
-          <a href="contact">Contact me</a>
+          <a href="mailto:candales.roberto@gmail.com?Subject=Interesado%20en%20el%20curso">Contact me</a>
           
         </div>
         <div className="profile-image">
