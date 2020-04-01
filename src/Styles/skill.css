@@ -30,6 +30,10 @@
   float: right;
   position: absolute;
   width: 80%;
+  color: greenyellow;
+}
+.boton1{
+  color: greenyellow;
 }
 .title {
   color: rgba(151, 151, 163, 0.333);
