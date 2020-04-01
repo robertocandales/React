@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../Styles/skill.css";
 
 function Skill() {
-  const [style, setstyle] = useState();
+  const [style, setStyle] = useState();
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const habilidades = [
     {
       name: "HTML",
@@ -21,7 +22,7 @@ function Skill() {
       porcentaje: 70
     }
   ];
-  const [skills, setskills] = useState(habilidades);
+  const [skills, setSkills] = useState(habilidades);
   const [a, seta] = useState(true);
 
   const click = (index, porcentaje) => {
@@ -34,19 +35,20 @@ function Skill() {
     seta(!a);
 
     //a ?
-       setTimeout(index => {
+       setTimeout(() => {
           const newStyle = {
             opacity: "1",
             width: `${x}%`
           };
-          setstyle(newStyle);
+          setSelectedIndex(index)
+          setStyle(newStyle);
         }, 100)
       // : setTimeout(() => {
       //     const newStyle = {
       //       opacity: "1",
       //       width: "0%"
       //     };
-      //     setstyle(newStyle);
+      //     setStyle(newStyle);
       //   }, 100);
   };
 
@@ -73,7 +75,7 @@ function Skill() {
           </div>
           <div className="col">
             <div className="progress">
-              <div className="progress-bar" style={style}>
+              <div className="progress-bar" style={selectedIndex===index?style:{}}>
                 {t.porcentaje}%
               </div>
             </div>
@@ -81,30 +83,32 @@ function Skill() {
         </div>
       ))}
 
-      <div className="row">
-        {skills.map((t, index) => (
-          <div className="col" key={index}>
-            <button
-              className="btn btn-outline-dark boton"
-              onClick={() => click(index, t.porcentaje)}
-            >
-              {t.name}
-            </button>
-          </div>
-        ))}
 
-        {skills.map((t, index) => (
-          <div className="col" key={index}>
-            <div className="progress">
-              <div className="progress-bar" style={style}>
-                {t.porcentaje}%
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }
+
+      // <div className="row">
+      //   {skills.map((t, index) => (
+      //     <div className="col" key={index}>
+      //       <button
+      //         className="btn btn-outline-dark boton"
+      //         onClick={() => click(index, t.porcentaje)}
+      //       >
+      //         {t.name}
+      //       </button>
+      //     </div>
+      //   ))}
+
+      //   {skills.map((t, index) => (
+      //     <div className="col" key={index}>
+      //       <div className="progress">
+      //         <div className="progress-bar" style={style}>
+      //           {t.porcentaje}%
+      //         </div>
+      //       </div>
+      //     </div>
+      //   ))}
+      // </div>
 
 export default Skill;
