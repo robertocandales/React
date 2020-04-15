@@ -17,15 +17,15 @@ function Skill() {
       porcentaje: 90,
     },
     {
-      name: 'Bootstrap',
+      name: 'Bootstrap / Material UI',
       porcentaje: 80,
     },
     {
-      name: 'Javascript',
+      name: 'Javascript / ES6',
       porcentaje: 75,
     },
     {
-      name: 'Reactjs / Redux',
+      name: 'Reactjs / Hooks / Redux',
       porcentaje: 70,
     },
     {
@@ -33,8 +33,16 @@ function Skill() {
       porcentaje: 50,
     },
     {
+      name: 'GiT / GitHub',
+      porcentaje: 70,
+    },
+    {
       name: 'Mongodb',
       porcentaje: 40,
+    },
+    {
+      name: 'Networking / Cisco / Hirshamnn',
+      porcentaje: 90,
     },
   ];
   const [skills, setSkills] = useState(habilidades);
