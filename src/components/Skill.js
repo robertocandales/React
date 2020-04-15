@@ -1,37 +1,41 @@
-import React, { useState } from "react";
-import "../Styles/skill.css";
-import { useSpring, animated } from "react-spring";
+import React, { useState } from 'react';
+import '../Styles/skill.css';
+import { useSpring, animated } from 'react-spring';
 
-import Resume from "./Resume";
+import Resume from './Resume';
 
 function Skill() {
   const [style, setStyle] = useState();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const habilidades = [
     {
-      name: "HTML",
-      porcentaje: 90
+      name: 'HTML',
+      porcentaje: 90,
     },
     {
-      name: "CSS",
-      porcentaje: 90
+      name: 'CSS',
+      porcentaje: 90,
     },
     {
-      name: "Bootstrap",
-      porcentaje: 80
+      name: 'Bootstrap',
+      porcentaje: 80,
     },
     {
-      name: "Javascript",
-      porcentaje: 75
+      name: 'Javascript',
+      porcentaje: 75,
     },
     {
-      name: "Reactjs",
-      porcentaje: 70
+      name: 'Reactjs / Redux',
+      porcentaje: 70,
     },
     {
-      name: "Mongodb",
-      porcentaje: 40
-    }
+      name: 'NodeJS / Express',
+      porcentaje: 50,
+    },
+    {
+      name: 'Mongodb',
+      porcentaje: 40,
+    },
   ];
   const [skills, setSkills] = useState(habilidades);
   const [a, seta] = useState(true);
@@ -45,11 +49,11 @@ function Skill() {
     const x = porcentaje;
     seta(!a);
     setSkills(skills);
-    //a ?
+    // a ?
     setTimeout(() => {
       const newStyle = {
-        opacity: "1",
-        width: `${x}%`
+        opacity: '1',
+        width: `${x}%`,
       };
       setSelectedIndex(index);
       setStyle(newStyle);
@@ -63,27 +67,27 @@ function Skill() {
     //   }, 100);
   };
   const [showResume, setshowResume] = useState(false);
-  const resume = e => {
+  const resume = (e) => {
     setshowResume(!showResume);
   };
 
-  const animatedResume = useSpring ({
+  const animatedResume = useSpring({
     from: {
-        opacity: 0,
-        
-        
-      },
-      to: {
-        opacity: 10,
-        
-      }
-})  
+      opacity: 0,
+    },
+    to: {
+      opacity: 10,
+    },
+  });
 
   return (
     <div className="skills container ">
-      <h1 id="skills" className="title">Skills</h1>
+      <h1 id="skills" className="title">
+        Skills
+      </h1>
       <div className="skills-info">
-      Here are some of my main technical skills, and keep in mind that I am continually motivated to keep improving and developing new skills.
+        Here are some of my main technical skills, and keep in mind that I am continually motivated
+        to keep improving and developing new skills.
       </div>
 
       {skills.map((t, index) => (
@@ -98,11 +102,9 @@ function Skill() {
           </div>
           <div className="col">
             <div className="progress">
-              <div
-                className="progress-bar"
-                style={selectedIndex === index ? style : {}}
-              >
-                {t.porcentaje}%
+              <div className="progress-bar" style={selectedIndex === index ? style : {}}>
+                {t.porcentaje}
+                %
               </div>
             </div>
           </div>
@@ -110,16 +112,14 @@ function Skill() {
       ))}
 
       <div className="resume">
-        <button className="btn btn-outline-dark mb-3 boton1"  onClick={resume}>
+        <button className="btn btn-outline-dark mb-3 boton1" onClick={resume}>
           Resume
         </button>
       </div>
 
-      <animated.div style = {animatedResume}>
-      {showResume ? <Resume showResume={showResume} /> : null}
+      <animated.div style={animatedResume}>
+        {showResume ? <Resume showResume={showResume} /> : null}
       </animated.div>
-
-      
     </div>
   );
 }

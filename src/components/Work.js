@@ -1,24 +1,7 @@
-import React from 'react'
-
-
-
+import React from 'react';
 
 function Work() {
-
-    
-    
-    
-    return (
-        <div>
-            
-
-            
-                    
-            
-            
-            
-        </div>
-    )
+  return <div />;
 }
 
-export default Work
+export default Work;
