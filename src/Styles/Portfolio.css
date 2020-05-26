@@ -15,14 +15,57 @@
   padding: 5px 10px;
 }
 .video {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 60%;
-  margin-left: 10px;
-  align-items: center;
+  width: 90% !important;
+  margin-left: 40px;
+  /*margin-left: 10px;*/
+  /*justify-content: space-around !important;
+  align-content: center;*/
+  /*align-items: center;
   align-content: center;
+  text-align: center;*/
+  /*background-color: darkgrey;*/
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center;
+}
+.hijo {
+  flex-grow: 1;
+  /*background-color: blue;*/
+  width: 20%;
+
+  align-items: center;
+  padding: 10px;
   text-align: center;
+  padding: 10%;
+}
+@media (max-width: 700px) {
+  .video {
+    width: 90% !important;
+    margin-left: 20px;
+    /*justify-content: space-around !important;
+  align-content: center;*/
+    /*align-items: center;
+  align-content: center;
+  text-align: center;*/
+    /*background-color: darkgrey;*/
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .hijo {
+    flex-grow: 1;
+    /*background-color: blue;*/
+    width: 20%;
+
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    padding: 5%;
+  }
 }
 .video1 {
   display: flexbox;
@@ -32,7 +75,9 @@
   align-items: center !important;
   align-content: center !important;
   text-align: center !important;
+  padding: 20px;
 }
+
 .container1 {
   flex: 1;
   align-items: center;
@@ -49,9 +94,9 @@
 
 .title1 {
   color: snow !important;
-  align-items: 'center' !important;
+  /*align-items: 'center' !important;*/
   font-size: 15px;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 5%;
 }
 .title2 {
@@ -90,6 +135,11 @@
 
 .react-player {
   position: absolute;
+  top: 0;
+  left: 0;
+}
+.react-player1 {
+  position: relative;
   top: 0;
   left: 0;
 }

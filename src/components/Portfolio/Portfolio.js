@@ -67,14 +67,16 @@ const Portfolio = () => (
           </Player>
         </div>
       </div> */}
-      <div className="title1">Mexican Client (Music App)</div>
+
+      {/* Ultimo Usado */}
+      {/* <div className="title1">Mexican Client (Music App)</div>
 
       <div className="player-wrapper">
         <ReactPlayer
           className="react-player"
           url={require('../Image/MusicApp2.mp4')}
-          width="100%"
-          height="100%"
+          width="30%"
+          height="50%"
           playing
           controls
         />
@@ -84,13 +86,38 @@ const Portfolio = () => (
         <ReactPlayer
           className="react-player"
           url={require('../Image/showVideo.mp4')}
-          width="100%"
-          height="100%"
+          width="30%"
+          height="50%"
           playing
           controls
         />
       </div>
-      <div className="title1">Delivery App</div>
+      <div className="title1">Delivery App</div> */}
+    </div>
+
+    {/* Nuevo */}
+    <div className="video">
+      <div className="hijo">
+        <div className="title1">Music App</div>
+        <ReactPlayer
+          url={require('../Image/MusicApp2.mp4')}
+          width="90%"
+          height="50%"
+          playing
+          controls
+        />
+      </div>
+
+      <div className="hijo">
+        <div className="title1">Delivery App</div>
+        <ReactPlayer
+          url={require('../Image/showVideo.mp4')}
+          width="90%"
+          height="50%"
+          playing
+          controls
+        />
+      </div>
     </div>
   </div>
 );
