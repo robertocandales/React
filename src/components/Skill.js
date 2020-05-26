@@ -135,7 +135,7 @@ function Skill() {
       ))} */}
 
       <div className="resume">
-        <button className="btn btn-outline-dark mb-3 form-control boton1" onClick={resume}>
+        <button className="btn btn-outline-primary mb-3 form-control boton1" onClick={resume}>
           Resume
         </button>
       </div>
