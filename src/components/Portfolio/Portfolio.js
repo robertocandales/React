@@ -67,6 +67,7 @@ const Portfolio = () => (
           </Player>
         </div>
       </div> */}
+      <div className="title1">Mexican Client (Music App)</div>
 
       <div className="player-wrapper">
         <ReactPlayer
@@ -75,8 +76,10 @@ const Portfolio = () => (
           width="100%"
           height="100%"
           playing
+          controls
         />
       </div>
+
       <div className="player-wrapper">
         <ReactPlayer
           className="react-player"
@@ -84,8 +87,10 @@ const Portfolio = () => (
           width="100%"
           height="100%"
           playing
+          controls
         />
       </div>
+      <div className="title1">Delivery App</div>
     </div>
   </div>
 );
