@@ -42,7 +42,12 @@ function Header() {
             </a>
           </li>
           <li className="web">
-            <a href="web" className={classes.root}>
+            <a
+              href="https://www.linkedin.com/in/robertocandales/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={classes.root}
+            >
               <Avatar alt="Roberto Candales" src={RC} className={classes.large} />
             </a>
           </li>

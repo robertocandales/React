@@ -8,6 +8,7 @@ import About from './components/About';
 import Skill from './components/Skill';
 import Work from './components/Work';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   const animation1 = useSpring({
@@ -38,6 +39,7 @@ function App() {
         <About />
         <Skill />
         <Work />
+        <Portfolio />
       </div>
     </animated.div>
   );
