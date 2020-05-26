@@ -47,20 +47,23 @@ const Portfolio = () => (
 
     <div>
       <div className="title2">React Native</div>
-      <div className="video container">
-        <div className="video1">
+
+      <div className="video1 contanier">
+        <div className="title1">Mexican Client (Music App)</div>
+        <div>
           <Player>
             <source src={require('../Image/MusicApp2.mp4')} />
             <ControlBar disableCompletely className="my-class" />
           </Player>
-          <div className="title1">Mexican Client (Music App)</div>
         </div>
-        <div className="video1">
+      </div>
+      <div className="video1 contanier">
+        <div className="title1">Delivery App</div>
+        <div className="mt-10 ">
           <Player>
             <source src={require('../Image/showVideo.mp4')} />
             <ControlBar disableCompletely className="my-class" />
           </Player>
-          <div className="title1">Delivery App</div>
         </div>
       </div>
     </div>

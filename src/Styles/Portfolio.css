@@ -17,21 +17,21 @@
 .video {
   display: flex;
   flex: 1;
-  flex-direction: row;
-  width: 90%;
+  flex-direction: column;
+  width: 60%;
   margin-left: 10px;
   align-items: center;
   align-content: center;
   text-align: center;
 }
 .video1 {
-  flex: 1;
   border-color: snow;
-  margin-left: 20px;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  /*width: 40%;*/
+  margin-left: 100px;
+  align-items: center !important;
+  align-content: flex-end !important;
+  text-align: center !important;
+  align-self: center;
+  width: 50%;
 }
 .container1 {
   flex: 1;
