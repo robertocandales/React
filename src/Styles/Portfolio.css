@@ -20,12 +20,11 @@
 }
 .video1 {
   flex: 1;
-  /*padding: 10%;*/
+  padding: 10%;
   padding-right: 10%;
   padding-left: 10%;
   border-width: 10;
   border-color: snow;
-  width: 10%;
   align-items: 'center';
   margin-bottom: 10%;
 }
