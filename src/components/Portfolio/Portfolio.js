@@ -4,6 +4,7 @@ import '../../Styles/Portfolio.css';
 // import ButtonBase from '@material-ui/core/ButtonBase';
 // import Typography from '@material-ui/core/Typography';
 import { Player, ControlBar } from 'video-react';
+import ReactPlayer from 'react-player';
 
 const images = [
   {
@@ -48,7 +49,7 @@ const Portfolio = () => (
     <div>
       <div className="title2">React Native</div>
 
-      <div className="video1 contanier">
+      {/* <div className="video1 contanier">
         <div className="title1">Mexican Client (Music App)</div>
         <div>
           <Player>
@@ -65,6 +66,25 @@ const Portfolio = () => (
             <ControlBar disableCompletely className="my-class" />
           </Player>
         </div>
+      </div> */}
+
+      <div className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url={require('../Image/MusicApp2.mp4')}
+          width="100%"
+          height="100%"
+          playing
+        />
+      </div>
+      <div className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url={require('../Image/showVideo.mp4')}
+          width="100%"
+          height="100%"
+          playing
+        />
       </div>
     </div>
   </div>
