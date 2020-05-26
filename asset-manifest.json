@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/React/static/css/main.23969380.chunk.css",
+    "main.js": "/React/static/js/main.f7d6935c.chunk.js",
+    "main.js.map": "/React/static/js/main.f7d6935c.chunk.js.map",
+    "runtime-main.js": "/React/static/js/runtime-main.30dbeb8e.js",
+    "runtime-main.js.map": "/React/static/js/runtime-main.30dbeb8e.js.map",
+    "static/js/2.e237e1cf.chunk.js": "/React/static/js/2.e237e1cf.chunk.js",
+    "static/js/2.e237e1cf.chunk.js.map": "/React/static/js/2.e237e1cf.chunk.js.map",
+    "index.html": "/React/index.html",
+    "precache-manifest.568573d2ec0893b6ff305bc76a8b6448.js": "/React/precache-manifest.568573d2ec0893b6ff305bc76a8b6448.js",
+    "service-worker.js": "/React/service-worker.js",
+    "static/css/main.23969380.chunk.css.map": "/React/static/css/main.23969380.chunk.css.map",
+    "static/js/2.e237e1cf.chunk.js.LICENSE.txt": "/React/static/js/2.e237e1cf.chunk.js.LICENSE.txt",
+    "static/media/002.jpg": "/React/static/media/002.494ead52.jpg",
+    "static/media/MusicApp2.mp4": "/React/static/media/MusicApp2.75823db4.mp4",
+    "static/media/RC.jpg": "/React/static/media/RC.96b2fcd5.jpg",
+    "static/media/home.png": "/React/static/media/home.0db5977b.png",
+    "static/media/native.png": "/React/static/media/native.635322f3.png",
+    "static/media/showVideo.mp4": "/React/static/media/showVideo.a1fbc014.mp4",
+    "static/media/stay.jpg": "/React/static/media/stay.8c53b9cf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30dbeb8e.js",
+    "static/js/2.e237e1cf.chunk.js",
+    "static/css/main.23969380.chunk.css",
+    "static/js/main.f7d6935c.chunk.js"
+  ]
+}
