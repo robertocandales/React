@@ -20,11 +20,18 @@
   flex-direction: row;
   width: 90%;
   margin-left: 10px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 .video1 {
+  flex: 1;
   border-color: snow;
   margin-left: 20px;
-  width: 50%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  /*width: 40%;*/
 }
 .container1 {
   flex: 1;
