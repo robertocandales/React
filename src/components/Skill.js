@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/skill.css';
 import { useSpring, animated } from 'react-spring';
-
+import { SkillsArray } from './Arrays/SkillsArray';
 import Resume from './Resume';
 
 function Skill() {
@@ -84,35 +84,53 @@ function Skill() {
   });
 
   return (
-    <div className=" container ">
-      <div className="title">
-        <h1>Skills</h1>
+    <div className=' container '>
+      <div className='title'>
+        <h1 style={{ color: 'darkslategrey' }}>Skills</h1>
       </div>
-      <div className="skills-info">
+      <div className='skills-info'>
         Here are some of my main technical skills, and keep in mind that I am continually motivated
         to keep improving and developing new skills.
       </div>
 
-      {skills.map((t, index) => (
-        <div className=" sm-screen" key={index}>
-          <div className="izq ">
+      <div className='wrapper'>
+        {SkillsArray.map((skill, index) => (
+          <div style={{ padding: '10px' }} key={index}>
+            <div
+              className='card '
+              style={{ width: '18rem', backgroundColor: 'darkslategrey', height: '300px' }}>
+              <img
+                className='card-img-top'
+                src={skill.image}
+                alt={skill.name}
+                style={{ height: '200px' }}
+              />
+              <div className='card-body'>
+                <p className='card-text'>{skill.name}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/*{skills.map((t, index) => (
+        <div className=' sm-screen' key={index}>
+          <div className='izq '>
             <button
-              className="btn btn-outline-dark form-control izq-1"
-              onClick={() => click(index, t.porcentaje)}
-            >
+              className='btn btn-outline-dark form-control izq-1'
+              onClick={() => click(index, t.porcentaje)}>
               <div>{t.name}</div>
             </button>
           </div>
-          <div className="bar">
-            <div className="progress">
-              <div className="progress-bar" style={selectedIndex === index ? style : {}}>
-                {t.porcentaje}
-                %
+          <div className='bar'>
+            <div className='progress'>
+              <div className='progress-bar' style={selectedIndex === index ? style : {}}>
+                {t.porcentaje}%
               </div>
             </div>
           </div>
         </div>
-      ))}
+      ))}*/}
       {/* {skills.map((t, index) => (
         <div className="row" key={index}>
           <div className="col ">
@@ -134,8 +152,8 @@ function Skill() {
         </div>
       ))} */}
 
-      <div className="resume">
-        <button className="btn btn-outline-primary mb-3 form-control boton1" onClick={resume}>
+      <div className='resume'>
+        <button className='btn btn-outline-primary mb-3 form-control boton1' onClick={resume}>
           Resume
         </button>
       </div>

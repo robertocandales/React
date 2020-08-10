@@ -3,33 +3,28 @@ import '../Styles/about.css';
 
 function About() {
   return (
-    <div className="about">
+    <div className='about'>
       <h1>About me</h1>
-      <p className="sangria">
+      <p className='sangria'>
         I am a self-motivated individual who thrives on succeeding in challenging situations. I am
         passionate about Professional development opportunities and welcome every opportunity to
-        take my capabilities to a higher level.
+        take my capabilities to a higher level. <br />
         <br />
+        I am suitably qualified with a degree in Electrical Engineering, relevant experience and the
+        skillset required to make a positive and valuable contribution to your company. I am a
+        front-end developer who has a wide range of front end skills, mainly with javascript
+        language stack (HTML, CSS, Javascript, ReactJS/Redux, React Natice, Node.js, Express,
+        API-Rest) <br />
         <br />
-        I am suitably qualified with a degree in
-        <b> Electrical Engineering </b>
-        , relevant experience and the skillset required to make a positive and valuable contribution
-        to your company. My professional background experience includes, planning, designing,
-        execution and closing electrical and electronics projects. Maintaning electrical and IT
-        system, problem solving in electrical / electronic equipment and networking desing. Great
-        part of my experience I have been participate in a big projects with others project leader.
-        <br />
-        <br />
-        Now, I am focusing my career in the
-        {' '}
-        <b>software development industry </b>
-        {' '}
-        and looking for
-        opportunities to take my software capabilities to the next level. I have a extensive
-        knowledge of Javascript Stack and have been working as an independent professional for
-        international clients with different technologies,
-        <b> backend, frontend and integration between them.</b>
-        <br />
+        I really enjoy writing optimised object code and am very good at building and maintaining
+        applications that support the solutions delivered to both internal and external customers. I
+        always look to add my own magical touch to any new code that I write,and would like to
+        mention that I love learning and continually expanding my knowledge stack and I think that
+        is my main skill. <br />
+        <br />I consider myself a real team player who understands the importance of teamwork,
+        collaboration, and open communication. In addition to this I am not only commercially aware,
+        proactive, adaptable and flexible, but also able to work in an environment which changes at
+        a fast pace.
       </p>
     </div>
   );
