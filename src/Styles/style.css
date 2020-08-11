@@ -11,7 +11,7 @@
   justify-content: space-around;
   margin-left: 10px;
   height: fit-content;
-  height: calc(100vh - 81.6px);
+  height: calc(50vh - 81.6px);
 }
 
 header h1,
@@ -53,6 +53,13 @@ span.name:hover {
 }
 span.m-left {
   color: snow;
+  
+}
+@media (max-width:767px) { 
+  span.m-left {
+    
+    font-size: 40px;
+  }
 }
 
 span.m-left:hover {

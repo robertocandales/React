@@ -49,7 +49,7 @@ const Carousel = () => {
             <img className='d-block w-100 mh-50'  src={distrito02} alt='Second slide'  />
           </div>
           <div className='carousel-item item' >
-            <img className='d-block w-100 mh-50'  src={distrito03} alt='Second slide' style={{height:'400px'}}  />
+            <img className='d-block w-100 mh-50 size'  src={distrito03} alt='Second slide'  />
           </div>
           <div className='carousel-item active'>
             <img className='d-block w-100' src={portefy1} alt='Third slide' />
@@ -70,17 +70,17 @@ const Carousel = () => {
           <div className='carousel-item'>
             <img className='d-block w-100' src={Rutas5} alt='eighth slide' />
           </div>{' '}
-          <div className='carousel-item'>
-            <img className='d-block w-100' src={Rutas6} alt='ninth slide' style={{height:'400px', width:'10px'}} />
-          </div>{' '}
+          {/* <div className='carousel-item'>
+            <img className='d-block w-100 size'  src={Rutas6} alt='ninth slide'  />
+          </div>{' '} */}
           <div className='carousel-item'>
             <img className='d-block w-100' src={Rutas7} alt='tenth slide' />
           </div>{' '}
           <div className='carousel-item'>
-            <img className='d-block w-100' src={Rutas8} alt='eleventh slide' style={{height:'400px', width:'10px'}} />
+            <img className='d-block w-100 size' src={Rutas8} alt='eleventh slide' />
           </div>{' '}
           <div className='carousel-item'>
-            <img className='d-block w-100' src={Rutas9} alt='twelfth slide' style={{height:'400px', width:'10px'}} />
+            <img className='d-block w-100 size' src={Rutas9} alt='twelfth slide'  />
           </div>
           <div className='carousel-item'>
             <img className='d-block w-100' src={tracking1} alt='therteenth slide' />

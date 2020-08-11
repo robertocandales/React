@@ -1,7 +1,17 @@
 .carousel {
-    width:900px;
-    height:500px;
+    width:90%;
+    height:100%;
     margin: auto;
+    
+  }
+
+  @media (max-width:767px) { 
+    .carousel {
+        width:90%;
+        height:50%;
+        margin: auto;
+        
+      }
   }
 
   .carousel-control-prev-icon {
@@ -11,3 +21,12 @@
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
+
+.size {
+    height:400px;
+}
+@media (max-width:767px) { 
+    .size {
+        height:120px;
+    }
+  }

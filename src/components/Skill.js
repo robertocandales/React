@@ -88,9 +88,10 @@ function Skill() {
       <div className='title'>
         <h1 style={{ color: 'darkslategrey' }}>Skills</h1>
       </div>
-      <div className='skills-info'>
-        Here are some of my main technical skills, and keep in mind that I am continually motivated
-        to keep improving and developing new skills.
+      <div className='skills-info' style={{color:'snow'}} >
+        <p>Here are some of my main technical skills, and keep in mind that I am continually motivated
+        to keep improving and developing new skills.</p>
+        
       </div>
 
       <div className='wrapper'>

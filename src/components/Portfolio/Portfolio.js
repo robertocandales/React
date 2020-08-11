@@ -26,13 +26,15 @@ const Portfolio = () => (
       </div>
     </div>
 
-    <div>
-      <div className='title2'>React Native</div>
-    </div>
+    
 
     {/* Nuevo */}
 
     <Carousel />
+
+    <div>
+      <div className='title2'>React Native</div>
+    </div>
     <div className='video'>
       <div className='hijo'>
         <div className='title1'>Music App</div>

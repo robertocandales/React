@@ -29,7 +29,7 @@ function Title() {
             <br />
             <span>W</span>
             <span className="m-left name">e</span>
-            <span className="m-left name">b &nbsp;&nbsp;</span>
+            <span className="m-left name">b &nbsp;</span>
             <span>D</span>
             <span className="m-left name">e</span>
             <span className="m-left name">v</span>
