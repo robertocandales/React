@@ -1,6 +1,7 @@
 import cuatro from './4.png';
 import distrito1 from './distrito1.png';
 import distrito2 from './distrito2.png';
+import distrito3 from './distrito3.png';
 import portefyRutas1 from './portefyRutas1.png';
 import portefyRutas2 from './portefyRutas2.png';
 import portefyRutas3 from './portefyRutas3.png';
@@ -10,6 +11,7 @@ import portefyRutas6 from './portefyRutas6.png';
 import portefyRutas7 from './portefyRutas7.png';
 import portefyRutas8 from './portefyRutas8.png';
 import portefyRutas9 from './portefyRutas9.png';
+import portefytracking from './tracking.png';
 
 export const portefy1 = cuatro;
 export const Rutas2 = portefyRutas2;
@@ -23,3 +25,6 @@ export const Rutas8 = portefyRutas8;
 export const Rutas9 = portefyRutas9;
 export const distrito = distrito1;
 export const distrito02 = distrito2;
+export const distrito03 = distrito3;
+export const tracking1 = portefytracking;
+
