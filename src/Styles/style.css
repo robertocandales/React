@@ -53,11 +53,9 @@ span.name:hover {
 }
 span.m-left {
   color: snow;
-  
 }
-@media (max-width:767px) { 
+@media (max-width: 767px) {
   span.m-left {
-    
     font-size: 40px;
   }
 }

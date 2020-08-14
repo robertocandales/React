@@ -6,12 +6,14 @@ import '../../Styles/Portfolio.css';
 import { Player, ControlBar } from 'video-react';
 import ReactPlayer from 'react-player';
 import Carousel from './Carousel';
+import PortfolioSpring from './PortfololioSpring/PortfolioSpring';
 
 const Portfolio = () => (
   <div className='container'>
     <div className='portfolio'>
       <h1>Portfolio </h1>
     </div>
+
     <div className='text'>
       {' '}
       <div className='sangria'>
@@ -25,8 +27,6 @@ const Portfolio = () => (
         Navigation and UI libraries libraries
       </div>
     </div>
-
-    
 
     {/* Nuevo */}
 
@@ -58,6 +58,7 @@ const Portfolio = () => (
         />
       </div>
     </div>
+    {/*<PortfolioSpring / >*/}
   </div>
 );
 

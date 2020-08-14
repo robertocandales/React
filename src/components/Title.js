@@ -1,13 +1,16 @@
-import React from "react";
-import image from './Image/stay.jpg'
-import '../Styles/style.css'
-
+import React from 'react';
+import image from './Image/stay.jpg';
+import '../Styles/style.css';
+import JobDescription from './JobDescription/JobDescription';
+import Name from './Name/Name';
+import Name1 from './Name1/Name1';
 
 function Title() {
   return (
     <div>
-      <div className="contanier main-info-section">
-        <div className="text">
+      {/* <JobDescription /> */}
+      <div className='contanier main-info-section'>
+        {/* <div className="text">
           <h1>
             <span>H</span>
             <span className="m-left">i</span>
@@ -46,9 +49,12 @@ function Title() {
           <p >HTML / CSS / Javascript / React</p>
           <a href="mailto:candales.roberto@gmail.com?Subject=Interesado%20en%20el%20curso">Contact me</a>
           
-        </div>
-        <div className="profile-image">
-          <img src={image} alt="" />
+        </div> */}
+        <Name />
+        {/*<Name1 />*/}
+
+        <div className='profile-image'>
+          <img src={image} alt='' />
         </div>
       </div>
     </div>

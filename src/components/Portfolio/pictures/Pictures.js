@@ -28,3 +28,35 @@ export const distrito02 = distrito2;
 export const distrito03 = distrito3;
 export const tracking1 = portefytracking;
 
+export const pictures = [
+    {
+        name: "Red munsell",
+        hex: "#ec0b43",
+        fontColor: "#fff",
+        image: distrito1,
+      },
+      {
+        name: "Blue munsell",
+        hex: "#048ba8",
+        fontColor: "#fff",
+        image: distrito2,
+      },
+      {
+        name: "Caribbean green",
+        hex: "#16db93",
+        fontColor: "#000",
+        image: distrito3,
+      },
+      {
+        name: "Maize",
+        hex: "#efea5a",
+        fontColor: "#000",
+        image: portefyRutas1,
+      },
+      {
+        name: "Neon carrot",
+        hex: "#f29e4c",
+        fontColor: "#000",
+        image: portefyRutas2,
+      }
+]
